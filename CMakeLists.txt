@@ -38,7 +38,7 @@ set_target_properties(
 )
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
-  target_compile_options(
+    target_compile_options(
         DungeonForge
         PRIVATE
             -Wall
@@ -46,7 +46,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
             -Wpedantic
     )
 elseif(MSVC)
-  target_compile_options(
+    target_compile_options(
         DungeonForge
         PRIVATE /W4
     )
